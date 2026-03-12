@@ -11,188 +11,35 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-  <div class="nav-logo">
-    <img src="logo.png" alt="Find Your Page Logo" />
-    Find Your Page
-  </div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home" onclick="closeMenu()">Home</a></li>
-    <li><a href="#fakta" onclick="closeMenu()">Fakta</a></li>
-    <li><a href="#manfaat" onclick="closeMenu()">Manfaat</a></li>
-    <li><a href="#tips" onclick="closeMenu()">Tips</a></li>
-    <li><a href="#kontak" onclick="closeMenu()">Kontak</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Find Your Page Logo" />
+      Find Your Page
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html?p=home" onclick="closeMenu()">Home</a></li>
+      <li><a href="index.html?p=fakta" onclick="closeMenu()">Fakta</a></li>
+      <li><a href="index.html?p=manfaat" onclick="closeMenu()">Manfaat</a></li>
+      <li><a href="index.html?p=tips" onclick="closeMenu()">Tips</a></li>
+      <li><a href="index.html?p=portofolio" onclick="closeMenu()">Portofolio</a></li>
+      <li><a href="index.html?p=kontak" onclick="closeMenu()">Kontak</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <span class="hero-tag">Gerakan Literasi Indonesia</span>
-      <h1>Setiap Buku<br/><em>Membuka Dunia Baru</em></h1>
-      <p>Temukan halamanmu. Karena setiap pembaca punya cerita dan perjalanannya sendiri — dan semuanya dimulai dari satu halaman pertama.</p>
-      <a href="#fakta" class="btn-primary">Mulai Membaca →</a>
-    </div>
-    <div class="hero-visual">
-      <img src="hero.png" alt="Membaca Buku" class="hero-img" />
-    </div>
-  </section>
-
-  <!-- FAKTA -->
-  <section class="fakta" id="fakta">
-    <div class="section-header">
-      <span class="section-tag">Data & Fakta</span>
-      <h2>Kondisi Literasi Indonesia</h2>
-      <p>Angka-angka yang perlu kita ketahui bersama</p>
-    </div>
-    <div class="fakta-grid">
-      <div class="fakta-card">
-        <div class="fakta-icon">📊</div>
-        <h3>Peringkat Minat Baca</h3>
-        <p>Minat baca Indonesia menurut berbagai survei internasional berada di peringkat bawah dibandingkan negara-negara lain di dunia.</p>
-      </div>
-      <div class="fakta-card highlight">
-        <div class="fakta-icon">⏰</div>
-        <h3>Waktu Membaca Per Hari</h3>
-        <p>Rata-rata waktu yang dihabiskan masyarakat Indonesia untuk membaca setiap harinya masih sangat rendah dibanding negara maju.</p>
-      </div>
-      <div class="fakta-card">
-        <div class="fakta-icon">📱</div>
-        <h3>Lebih Suka Konten Video</h3>
-        <p>Mayoritas generasi muda lebih memilih konten video dibandingkan membaca buku atau artikel panjang.</p>
-      </div>
-    </div>
-    <div class="fakta-quote">
-      <blockquote>"Membaca adalah jendela dunia. Semakin banyak kamu membaca, semakin luas dunia yang kamu lihat."</blockquote>
-    </div>
-  </section>
-
-  <!-- MANFAAT -->
-  <section class="manfaat" id="manfaat">
-    <div class="section-header light">
-      <span class="section-tag">Mengapa Membaca?</span>
-      <h2>Manfaat Membaca</h2>
-      <p>Lebih dari sekadar hobi — membaca mengubah hidup</p>
-    </div>
-    <div class="manfaat-grid">
-      <div class="manfaat-card">
-        <div class="manfaat-icon">🧠</div>
-        <h3>Meningkatkan Kecerdasan</h3>
-        <p>Membaca secara rutin melatih otak, memperluas kosakata, dan meningkatkan kemampuan berpikir kritis serta analitis.</p>
-      </div>
-      <div class="manfaat-card">
-        <div class="manfaat-icon">💭</div>
-        <h3>Mengurangi Stres</h3>
-        <p>Membaca secara rutin terbukti dapat membantu menurunkan tingkat stres dan membuat pikiran lebih tenang dan fokus.</p>
-      </div>
-      <div class="manfaat-card">
-        <div class="manfaat-icon">🌍</div>
-        <h3>Memperluas Wawasan</h3>
-        <p>Setiap buku membawamu ke dunia baru — perspektif berbeda, budaya lain, dan pengetahuan yang tak terbatas.</p>
-      </div>
-      <div class="manfaat-card">
-        <div class="manfaat-icon">✍️</div>
-        <h3>Meningkatkan Kemampuan Menulis</h3>
-        <p>Pembaca yang baik cenderung menjadi penulis yang baik. Membaca mengajarkan struktur, gaya, dan diksi secara alami.</p>
-      </div>
-      <div class="manfaat-card">
-        <div class="manfaat-icon">❤️</div>
-        <h3>Meningkatkan Empati</h3>
-        <p>Membaca fiksi terbukti meningkatkan kemampuan berempati karena kita ikut merasakan pengalaman karakter dalam cerita.</p>
-      </div>
-      <div class="manfaat-card">
-        <div class="manfaat-icon">😴</div>
-        <h3>Tidur Lebih Berkualitas</h3>
-        <p>Membaca sebelum tidur membantu otak beristirahat dari layar dan mempersiapkan tubuh untuk tidur lebih nyenyak.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TIPS -->
-  <section class="tips" id="tips">
-    <div class="section-header">
-      <span class="section-tag">Mulai Dari Mana?</span>
-      <h2>Tips Memulai Kebiasaan Membaca</h2>
-      <p>Tidak ada kata terlambat untuk memulai</p>
-    </div>
-    <div class="tips-list">
-      <div class="tips-item">
-        <div class="tips-number">01</div>
-        <div class="tips-content">
-          <h3>Mulai dari yang Kamu Suka</h3>
-          <p>Tidak harus buku berat atau klasik. Mulailah dari genre yang kamu nikmati — novel, komik, self-help, atau bahkan majalah. Yang penting mulai!</p>
-        </div>
-      </div>
-      <div class="tips-item">
-        <div class="tips-number">02</div>
-        <div class="tips-content">
-          <h3>Tetapkan Waktu Membaca</h3>
-          <p>Sisihkan 15–20 menit sehari khusus untuk membaca. Bisa pagi sebelum aktivitas, saat istirahat siang, atau malam sebelum tidur.</p>
-        </div>
-      </div>
-      <div class="tips-item">
-        <div class="tips-number">03</div>
-        <div class="tips-content">
-          <h3>Selalu Bawa Buku</h3>
-          <p>Manfaatkan waktu menunggu — di angkot, antrian, atau sela-sela kelas. Atau gunakan aplikasi baca di ponselmu seperti iPusnas atau Google Play Books.</p>
-        </div>
-      </div>
-      <div class="tips-item">
-        <div class="tips-number">04</div>
-        <div class="tips-content">
-          <h3>Catat Buku yang Sudah Dibaca</h3>
-          <p>Buat reading list sederhana. Melihat daftar buku yang sudah kamu selesaikan akan memberi kepuasan tersendiri dan memotivasimu untuk terus membaca.</p>
-        </div>
-      </div>
-      <div class="tips-item">
-        <div class="tips-number">05</div>
-        <div class="tips-content">
-          <h3>Manfaatkan Perpustakaan Digital</h3>
-          <p>iPusnas, Libby, dan Project Gutenberg menyediakan ribuan buku gratis. Kamu bisa membaca kapan saja dan di mana saja tanpa perlu membeli buku.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- KONTAK -->
-  <section class="kontak" id="kontak">
-    <div class="kontak-inner">
-      <div class="kontak-text">
-        <span class="section-tag">Hubungi Kami</span>
-        <h2>Punya Rekomendasi Buku?</h2>
-        <p>Bagikan buku favoritmu atau ceritakan pengalaman membacamu. Kami senang mendengar dari sesama pembaca! 📚</p>
-      </div>
-      <form class="kontak-form">
-        <input type="text" placeholder="Nama Lengkap" required />
-        <input type="email" placeholder="Alamat Email" required />
-        <input type="text" placeholder="Judul Buku Favoritmu (opsional)" />
-        <textarea placeholder="Pesan atau Rekomendasi Bukumu..." rows="5" required></textarea>
-        <button type="submit">Kirim Pesan</button>
-      </form>
-    </div>
-  </section>
+  <!-- KONTEN DIMUAT DI SINI -->
+  <main id="content"></main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 <strong>Find Your Page</strong> — Veren Amelia Lajame · 231011060066</p>
+    <p>© 2025 <strong>Find Your Page</strong> — Veren Amelia Lajame · 231011060066</p>
     <p>Sistem Informasi, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Sam Ratulangi</p>
   </footer>
 
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.toggle('open');
-  }
-
-  function closeMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.remove('open');
-  }
-</script>
+  <script src="script.js"></script>
 
 </body>
 </html>

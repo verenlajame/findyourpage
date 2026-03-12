@@ -547,6 +547,212 @@ body {
   transition: all 0.3s ease;
 }
 
+/* ===== PORTOFOLIO ===== */
+.portofolio {
+  padding: 8rem 6% 6rem;
+  background: #FDF6F0;
+}
+
+.porto-subtitle {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--brown);
+  margin-bottom: 2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid rgba(193,123,123,0.25);
+}
+
+.porto-kategori {
+  margin-bottom: 6rem;
+}
+
+.porto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.porto-card {
+  background: #FFFAF7;
+  border-radius: 12px;
+  padding: 1.8rem 1.5rem;
+  border: 1px solid rgba(193,123,123,0.2);
+  box-shadow: 4px 4px 0px rgba(193,123,123,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.porto-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--rose-dark), var(--rose-light));
+  border-radius: 12px 12px 0 0;
+}
+
+.porto-card:hover {
+  transform: translateY(-8px) rotate(-0.5deg);
+  box-shadow: 6px 12px 0px rgba(193,123,123,0.2);
+}
+
+.porto-badge {
+  display: inline-block;
+  background: #F5E6DC;
+  color: var(--rose-dark);
+  padding: 0.3rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+
+.porto-cover {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.porto-cover img {
+  width: 110px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 4px 6px 16px rgba(100,60,30,0.25);
+  transition: transform 0.3s ease;
+}
+
+.porto-card:hover .porto-cover img {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.porto-card h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--brown);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.porto-author {
+  font-size: 0.82rem;
+  color: var(--rose-dark);
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  font-style: italic;
+}
+
+.porto-desc {
+  font-size: 0.84rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* REVIEW */
+.porto-review {
+  background: #FDF6F0;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.8rem;
+}
+
+.review-card {
+  background: #FFFAF7;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(193,123,123,0.2);
+  box-shadow: 4px 4px 0px rgba(193,123,123,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.review-card::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: rgba(193,123,123,0.15);
+  line-height: 1;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 6px 10px 0px rgba(193,123,123,0.18);
+}
+
+.review-top {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-cover {
+  flex-shrink: 0;
+}
+
+.review-cover img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 3px 4px 10px rgba(100,60,30,0.2);
+}
+
+.review-meta h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.review-stars {
+  color: #D4833A;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  letter-spacing: 2px;
+}
+
+.review-genre {
+  display: inline-block;
+  background: #F5E6DC;
+  color: var(--rose-dark);
+  padding: 0.25rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 0.8rem;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.9;
+  font-style: italic;
+}
+
+/* ===== ACTIVE MENU ===== */
+.nav-links a.active {
+  color: var(--rose-dark);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .navbar {
@@ -618,6 +824,14 @@ body {
   }
 
   .manfaat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .porto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid {
     grid-template-columns: 1fr;
   }
 }
